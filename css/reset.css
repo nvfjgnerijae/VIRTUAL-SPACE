@@ -1,0 +1,52 @@
+/* reset.css */
+
+/* 全ての要素のmargin, paddingをリセットし、box-sizingをborder-boxに設定 */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* bodyの基本的な設定 */
+body {
+  line-height: 1.5; /* 行の高さを設定 */
+  -webkit-font-smoothing: antialiased; /* フォントを滑らかに */
+}
+
+/* 画像や動画が親要素からはみ出ないようにする */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* input, button, textarea, selectのフォントを継承 */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 見出しのフォントサイズと太さをリセット */
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* リストのスタイルをリセット */
+ul,
+ol {
+  list-style: none;
+}
+
+/* リンクのデフォルトスタイルをリセット */
+a {
+  text-decoration: none;
+  color: inherit;
+}
